@@ -1,0 +1,19 @@
+$breakpoint-xl: 1200px;
+$breakpoint-large: 992px;
+$breakpoint-medium: 768px;
+$breakpoint-small: 576px;
+
+@media (min-width: $breakpoint-large) {
+    
+    header {
+        nav {
+            .nav-item:last-child {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    .about_company__section {
+        background-position: left;
+    }
+}
