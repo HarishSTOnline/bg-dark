@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -338,7 +339,7 @@
                 <div class="row">
 
                     <div class="col-12 col-sm-6 mb-4">
-                        <div class="step">
+                        <div class="step" data-aos="fade-up-right">
                             
                             <img src="images/process/process_list_1.png" alt="">
                             <div class="content px-5 mt-3">
@@ -354,7 +355,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mb-4">
-                        <div class="step">
+                        <div class="step" data-aos="fade-up-left">
                             
                             <img src="images/process/process_list_2.png" alt="">
                             <div class="content px-5 mt-3">
@@ -370,7 +371,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mb-4">
-                        <div class="step">
+                        <div class="step" data-aos="fade-down-right">
                             
                             <img src="images/process/process_list_3.png" alt="">
                             <div class="content px-5 mt-3">
@@ -386,7 +387,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mb-4">
-                        <div class="step">
+                        <div class="step" data-aos="fade-down-left">
                             
                             <img src="images/process/process_list_4.png" alt="">
                             <div class="content px-5 mt-3">
@@ -425,20 +426,20 @@
                 </p>
             </div>
 
-            <div class="image__collage">
-                <div class="grid_item grid_item__tall">
+            <div class="image__collage" id="image-collage">
+                <div class="grid_item grid_item__tall" data-src="images/Home-Gallery/Full-height.jpg" data-sub-html="beautiful-garden-image-gallery" data-aos="fade-right">
                     <img src="images/Home-Gallery/Full-height.jpg" alt="beautiful-garden-image-gallery">
                 </div>
-                <div class="grid_item grid_row__1 grid_col__2">
+                <div class="grid_item grid_row__1 grid_col__2" data-src="images/Home-Gallery/col-2.jpg" data-sub-html="beautiful-garden-image-gallery" data-aos="fade-down">
                     <img src="images/Home-Gallery/col-2.jpg" alt="beautiful-garden-image-gallery">
                 </div>
-                <div class="grid_item grid_row__1 grid_col__3">
+                <div class="grid_item grid_row__1 grid_col__3" data-src="images/Home-Gallery/col-3.jpg" data-sub-html="beautiful-garden-image-gallery" data-aos="fade-down-left">
                     <img src="images/Home-Gallery/col-3.jpg" alt="beautiful-garden-image-gallery">
                 </div>
-                <div class="grid_item grid_row__2 grid_col__2">
+                <div class="grid_item grid_row__2 grid_col__2" data-src="images/Home-Gallery/col-4.jpg" data-sub-html="beautiful-garden-image-gallery" data-aos="fade-up">
                     <img src="images/Home-Gallery/col-4.jpg" alt="beautiful-garden-image-gallery">
                 </div>
-                <div class="grid_item grid_row__2 grid_col__3">
+                <div class="grid_item grid_row__2 grid_col__3" data-src="images/Home-Gallery/col-5.jpg" data-sub-html="beautiful-garden-image-gallery" data-aos="fade-up-left">
                     <img src="images/Home-Gallery/col-5.jpg" alt="beautiful-garden-image-gallery">
                 </div>
             </div>
@@ -577,6 +578,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
     <script src="js/custom.js"></script>
 
 </body>

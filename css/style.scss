@@ -242,6 +242,32 @@ a {
     background-color: $bg-primary-color;
 }
 
+@keyframes right-arrow {
+    0% { transform: translateX(0); opacity: 0.4 }
+    50% { transform: translateX(0.4em); opacity: 0.9 }
+    100% { transform: translateX(0em); opacity: 0.9 }
+}
+
+@keyframes rotate360 {
+    0% { transform: rotate(0deg); opacity: 0.4 }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotate15 {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg) scale(1.2); }
+    100% { transform: rotate(0deg);  }
+}
+
+@keyframes flash {
+    0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .horizontal__card__small {
     width: 100%;
     height: 100%;
@@ -284,6 +310,23 @@ a {
 
     &:hover {
         box-shadow: $card-box-shadow;
+
+        h4 {
+
+            &::after {
+
+                animation: right-arrow;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+                animation-duration: 600ms;
+            }
+        }
+
+        img {
+            -webkit-animation: rotate360 600ms;
+            animation: rotate360 600ms;
+        }
     }
 }
 
@@ -315,6 +358,15 @@ a {
         background-repeat: no-repeat;
         // background-size: cover;
         padding: 1.5rem 1rem;
+        cursor: pointer;
+
+        &:hover {
+            img {
+                animation: rotate15 600ms;
+                -webkit-animation: rotate15 600ms;
+                animation-delay: 300ms;
+            }
+        }
     }
 }
 
@@ -337,6 +389,8 @@ a {
 
     .grid_item {
         min-height: 100px;
+        cursor: pointer;
+        overflow: hidden;
     }
 
     .grid_col__2 {
@@ -350,6 +404,17 @@ a {
     img {
         width: 100%;
         height: 100%;
+        -webkit-transition: 600ms ease-in-out;
+        transition: 600ms ease-in-out;
+        
+
+        &:hover {
+            -webkit-transform: rotate(10deg) scale(1.2);
+            transform: rotate(10deg) scale(1.2);
+            -webkit-filter: grayscale(50%);
+	        filter: grayscale(50%);
+            
+        }
     }
 }
 
@@ -463,6 +528,14 @@ footer  {
     
     i {
         font-size: 2em;
+        cursor: pointer;
+
+        &:hover {
+            -webkit-animation: rotate360;
+            animation: rotate360;
+            animation-duration: 600ms;
+            color: $primary-color;
+        }
     }
 }
 

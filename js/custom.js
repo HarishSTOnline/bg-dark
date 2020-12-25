@@ -36,3 +36,8 @@ $('.slick-slider').slick({
 
 // AOS
 AOS.init();
+
+// LightGallery
+lightGallery(document.getElementById('image-collage'), {
+    thumbnail:true
+}); 
