@@ -360,11 +360,14 @@ a {
         padding: 1.5rem 1rem;
         cursor: pointer;
 
+        img {
+            transition: transform 600ms;
+        }
+
         &:hover {
+
             img {
-                animation: rotate15 600ms;
-                -webkit-animation: rotate15 600ms;
-                animation-delay: 300ms;
+                transform: rotateY(180deg);
             }
         }
     }
@@ -404,8 +407,8 @@ a {
     img {
         width: 100%;
         height: 100%;
-        -webkit-transition: 600ms ease-in-out;
-        transition: 600ms ease-in-out;
+        -webkit-transition: transform 600ms ease-in-out;
+        transition: transform 600ms ease-in-out;
         
 
         &:hover {
@@ -525,15 +528,14 @@ footer  {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
     i {
         font-size: 2em;
         cursor: pointer;
+        transition: 600ms;
 
         &:hover {
-            -webkit-animation: rotate360;
-            animation: rotate360;
-            animation-duration: 600ms;
+            transform: rotateY(360deg);
             color: $primary-color;
         }
     }

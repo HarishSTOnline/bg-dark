@@ -324,10 +324,12 @@ a:hover {
   cursor: pointer;
 }
 
+.steps .step img {
+  transition: transform 600ms;
+}
+
 .steps .step:hover img {
-  animation: rotate15 600ms;
-  -webkit-animation: rotate15 600ms;
-  animation-delay: 300ms;
+  transform: rotateY(180deg);
 }
 
 /**** Our Portfolio section ****/
@@ -362,7 +364,7 @@ a:hover {
 .image__collage img {
   width: 100%;
   height: 100%;
-  transition: 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 }
 
 .image__collage img:hover {
@@ -474,11 +476,11 @@ footer a:hover {
 .social_icons i {
   font-size: 2em;
   cursor: pointer;
+  transition: 600ms;
 }
 
 .social_icons i:hover {
-  animation: rotate360;
-  animation-duration: 600ms;
+  transform: rotateY(360deg);
   color: #06d06b;
 }
 
