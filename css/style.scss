@@ -219,6 +219,26 @@ a {
     }
 }
 
+.banner_content {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.6;
+    padding: 1em;
+    bottom: 2em;
+    right: 0em;
+    max-width: 60%;
+    
+    h2 {
+        font-family: $font-kaushan;
+        font-size: 3em;
+    }
+
+    h4 {
+        font-family: $font-oswald;
+        font-size: 1.5em;
+    }
+}
+
 /**** About company section ****/
 .about_company__section {
     background-color: $bg-secondary-color;

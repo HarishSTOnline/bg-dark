@@ -187,6 +187,26 @@ a:hover {
   height: auto;
 }
 
+.banner_content {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  padding: 1em;
+  bottom: 2em;
+  right: 0em;
+  max-width: 60%;
+}
+
+.banner_content h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3em;
+}
+
+.banner_content h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
 /**** About company section ****/
 .about_company__section {
   background-color: #202020;
